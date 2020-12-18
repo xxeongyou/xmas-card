@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merry Christmas🥳</title>
+    <!-- favicon 넣기 -->
+    <link rel="shortcut icon" href="https://i.pinimg.com/favicons/34d6a9e0eb6c4a763c0e90d8a8c60a2e26ba51c814f23d4029a7c553.png?801f2db703b45c4029888e5237b85297">
+    <!-- og img 넣기 -->
+    <meta property="og:image" content="https://business.pureprofile.com/wp-content/uploads/2020/10/800-x-400-539x303.png">
+    <meta property="og:title" content="Merry Christmas🧤🎄☃️">
+    <meta property="og:description" content="헤이가이즈 메리크리스마스😁💝">
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    <style>
+        @font-face {
+            font-family: 'GmarketSansMedium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        * {
+            font-family: 'GmarketSansMedium';
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            background-color: rgb(165, 216, 45);
+        }
+        .letter {
+            width: 200px;
+            height: 200px;
+            background-image: url('https://www.flaticon.com/svg/static/icons/svg/1554/1554792.svg');
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0 auto;
+
+            cursor: pointer;
+        }
+        .open {
+            color: rgb(90, 11, 97);
+            text-align: center;
+        }
+        .letter_close {
+            display: block;
+        }
+        .letter_open {
+            display: none;
+        }
+        .topImg {
+            background-color: white;
+            width: 380px;
+            height: 250px;
+
+            background-image: url('https://media3.giphy.com/media/y70nmvD1ppnQA/giphy.gif');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0 auto;
+
+            border-radius: 50px;
+            /* border: 5px solid rgb(2, 6, 38); */
+            box-shadow: 0px 0px 20px 0px rgb(2, 6, 38);
+
+            cursor: pointer;
+        }
+        h1 {
+            color: rgb(226, 79, 104);
+            text-align: center;
+            margin: 30px 0;
+        }
+        .msgBox {
+            background-color: ivory;
+            width: 500px;
+            margin: auto;
+
+            color: rgb(70, 124, 204);
+            padding: 30px;
+            
+            font-size: 15px;
+            line-height: 30px;
+            box-shadow: 0px 0px 10px 10px white;
+        }
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+        @media screen and (max-width: 760px) {
+            .msgBox {
+                width: 300px;
+                padding: 20px;
+                font-size: 13px;
+            }
+            .topImg {
+                width: 270px;
+                height: 200px;
+                margin: 70px auto 0 auto;
+            }
+            h1 {
+                font-size: 25px;
+            }
+            .letter {
+                margin: 150px auto 0 auto;
+            }
+        }
+    </style>
+    <script>
+        function open_letter() {
+            document.querySelector(".letter_close").style.display = 'none';
+            document.querySelector(".letter_open").style.display = 'block';
+        }
+        function hiddenMsg() {
+            alert('숨겨진 메세지를 찾은 당신. 두 배로 복 받던지!');
+            window.location.href='https://www.youtube.com/watch?v=DFH2NpzgQ2E';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="letter_close">
+        <div class="letter" onclick="open_letter()"></div>
+        <h3 class="open">편지가 도착했습니다.🧚🏼‍✨</h3>
+    </div>
+    <div class="letter_open">
+        <div class="topImg" onclick="hiddenMsg()"></div>
+        <h1>💕🎄☃️🧤💌</h1>
+        <div class="msgBox">
+            Merry Charistmas & Happy New Year<br>
+            2021년도 잘 먹고 잘 살자<br>
+            어후 니들 내년에도 그냥 쌉 잘 났음 잘 먹고 잘 살아서<br>
+            하는 족족 대박나고 한 방에 적중하고<br>
+            8차선 탄탄대로만 마세라티타고 달리셈<br>
+            내가 니들 다 사랑함
+            <p class="from">2020 X-MAS❣️ 썽유</p>
+        </div>
+    </div>
+</body>
+
+</html>
